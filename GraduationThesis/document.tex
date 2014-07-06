@@ -1,0 +1,60 @@
+%
+% $Id: blank.tex,v 2.0 2010-01-05 18:50:50+09 kobayasi Exp $
+%
+% Mar 21, 2001:  Revision Control Started!!
+%
+\documentclass[11pt]{jreport}
+\usepackage{newcent}             % PDFへの変換後の品質を高める
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{color}
+\definecolor{purple}{rgb}{0.6,0,0.4}
+\definecolor{brown}{cmyk}{0,0.81,1,0.60}
+\usepackage{listings, jlisting}
+\renewcommand{\lstlistingname}{ソース}
+\lstset
+{
+breaklines = true,
+language=Java,
+keywordstyle={\color{purple}},
+commentstyle={\color{brown}},
+numbers=left,
+frame=single,
+tabsize=4
+}
+
+
+%
+%\usepackage[doctor]{gaiyo}      % 博士論文要旨の場合
+%\usepackage[master]{gaiyo}      % 修士論文要旨の場合
+\usepackage{sotsuron}               % 卒業研究概要の場合
+% \usepackage[junior]{gaiyo}      % 専門演習レポートの場合
+
+\setlength\textfloatsep{0pt}
+
+\title{\bfseries スマートフォンのモーションセンサを利用した個人認証アプリケーションの開発}
+\author{情11-0170　高坂 賢佑}
+\date{}
+\renewcommand{\bibname}{参考文献，参考URL等}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\listoffigures
+
+\chapter*{はじめに}
+aaaaa
+
+\chapter{bbb}
+bbbbb
+
+\section{ccc}
+ccccc
+
+\chapter{おわりに}
+dddd
+
+\chapter*{謝辞}
+eeeee
+
+\end{document}
