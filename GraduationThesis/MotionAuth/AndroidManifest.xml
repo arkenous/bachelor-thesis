@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.example.motionauth"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 対象となるAndroid Versionの指定 -->
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <!-- SDカードへの書き込み権限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.motionauth.Start"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration.RegistNameInput"
+            android:label="@string/title_activity_regist_name_input"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Registration.RegistMotion"
+            android:label="@string/title_activity_regist_motion"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Authentication.AuthNameInput"
+            android:label="@string/title_activity_auth_name_input"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Authentication.AuthMotion"
+            android:label="@string/title_activity_auth_motion"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ViewDataList.RegistrantList"
+            android:label="@string/title_activity_registrant_list"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ViewDataList.ViewRegistedData"
+            android:label="@string/title_activity_view_registed_data"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ViewDataList.ViewRegistedRData"
+            android:label="@string/title_activity_view_registed_rdata"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ViewDataList.ViewAuthRData"
+            android:label="@string/title_activity_view_auth_rdata"
+            android:screenOrientation="portrait"></activity>
+    </application>
+</manifest>
