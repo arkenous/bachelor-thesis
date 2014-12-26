@@ -1,0 +1,19 @@
+/**
+  * 与えられたデータを増幅させる
+  *
+  * @param data 増幅させるdouble型三次元配列データ
+  * @param ampValue どれだけデータを増幅させるか
+  * @return 増幅後のdouble型三次元配列データ
+  */
+public double[][][] Amplify (double[][][] data, double ampValue) {
+    if (ampValue != 0.0) {
+        for (int i = 0; i < data.length; i++) {
+            for (int j = 0; j < data[i].length; j++) {
+                for (int k = 0; k < data[i][j].length; k++) {
+                    data[i][j][k] *= ampValue;
+                }
+            }
+        }
+    }
+    return data;
+}

@@ -1,0 +1,42 @@
+private boolean isRangeCheck = false;
+
+/**
+ * 全試行回数中，１回でもデータの幅が閾値よりも小さければtrueを返す
+ *
+ * @param data チェックするdouble型三次元配列データ
+ * @return 全試行回数中，１回でもデータの幅が閾値よりも小さければtrue，そうでなければfalse
+ */
+public boolean CheckValueRange (double[][][] data, double checkRangeValue) {
+    double[][] max = new double[data.length][data[0].length];
+    double[][] min = new double[data.length][data[0].length];
+
+    for (int i = 0; i < data.length; i++) {
+        for (int j = 0; j < data[i].length; j++) {
+            max[i][j] = 0;
+            min[i][j] = 0;
+        }
+    }
+    
+    double range;
+    for (int i = 0; i < data.length; i++) {
+        for (int j = 0; j < data[i].length; j++) {
+            for (int k = 0; k < data[i][j].length; k++) {
+                if (data[i][j][k] > max[i][j]) {
+                    max[i][j] = data[i][j][k];
+                }
+                else if (data[i][j][k] < min[i][j]) {
+                    min[i][j] = data[i][j][k];
+                }
+            }
+        }
+    }
+
+    for (int i = 0; i < max.length; i++) {
+        for (int j = 0; j < max[i].length; j++) {
+            range = max[i][j] - min[i][j];
+            if (range < checkRangeValue) isRangeCheck = true;
+        }
+    }
+
+    return isRangeCheck;
+}

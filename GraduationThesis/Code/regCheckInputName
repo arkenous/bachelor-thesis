@@ -1,0 +1,32 @@
+public class RegistNameInput extends Activity {
+    // ユーザが入力した文字列（名前）を格納する
+    public static String name;
+...
+    private void nameInput () {
+        final EditText nameInput = (EditText) findViewById (R.id.nameInputEditText);
+
+        nameInput.addTextChangedListener(new TextWatcher() {
+            ...
+            public void afterTextChanged (Editable s) {
+                // ユーザの入力した名前をnameに格納
+                if (nameInput.getText() != null) name = nameInput.getText().toString().trim();
+            }
+        });
+        ...
+        // OKボタンを押した時に，次のアクティビティに移動
+        final Button ok = (Button) findViewById(R.id.okButton);
+
+        ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v) {
+                // nameが入力されているかの確認
+                if (name.length() == 0) {
+                    Toast.makeText(RegistNameInput.this, "名前が入力されていません", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    RegistNameInput.this.moveActivity("com.example.motionauth", "com.example.motionauth.Registration.RegistMotion", true);
+                }
+            }
+        });
+    }
+}

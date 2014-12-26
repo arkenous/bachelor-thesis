@@ -1,0 +1,61 @@
+//region 同一のモーションであるかの確認をし，必要に応じてズレ修正を行う
+Enum.MEASURE measure = mCorrelation.measureCorrelation(distance, angle, averageDistance, averageAngle);
+
+if (Enum.MEASURE.BAD == measure) {
+    // 相関係数が0.4以下
+    return false;
+}
+else if (Enum.MEASURE.INCORRECT == measure) {
+    // 相関係数が0.4よりも高く，0.6以下の場合
+    // ズレ修正を行う
+    int time = 0;
+    Enum.MODE mode = Enum.MODE.MAX;
+
+    double[][][] originalDistance = distance;
+    double[][][] originalAngle = angle;
+
+    while (true) {
+        switch (time) {
+            case 0:
+                mode = Enum.MODE.MAX;
+                break;
+            case 1:
+                mode = Enum.MODE.MIN;
+                break;
+            case 2:
+                mode = Enum.MODE.MEDIAN;
+                break;
+        }
+
+        distance = mCorrectDeviation.correctDeviation(originalDistance, mode);
+        angle = mCorrectDeviation.correctDeviation(originalAngle, mode);
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 100; j++) {
+                averageDistance[i][j] = (distance[0][i][j] + distance[1][i][j] + distance[2][i][j]) / 3;
+                averageAngle[i][j] = (angle[0][i][j] + angle[1][i][j] + angle[2][i][j]) / 3;
+            }
+        }
+
+        Enum.MEASURE tmp = mCorrelation.measureCorrelation(distance, angle, averageDistance, averageAngle);
+
+        if (tmp == Enum.MEASURE.PERFECT || tmp == Enum.MEASURE.CORRECT) {
+            break;
+        }
+        else if (time == 2) {
+            // 相関係数が低いまま，アラートなどを出す？
+            distance = originalDistance;
+            angle = originalAngle;
+            break;
+        }
+
+        time++;
+    }
+}
+else if (Enum.MEASURE.PERFECT == measure || Enum.MEASURE.CORRECT == measure) {
+    // PERFECTなら，何もしない
+}
+else {
+    // なにかがおかしい
+    return false;
+}
