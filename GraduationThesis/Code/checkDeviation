@@ -1,4 +1,3 @@
-//region 同一のモーションであるかの確認をし，必要に応じてズレ修正を行う
 Enum.MEASURE measure = mCorrelation.measureCorrelation(distance, angle, averageDistance, averageAngle);
 
 if (Enum.MEASURE.BAD == measure) {
@@ -6,8 +5,7 @@ if (Enum.MEASURE.BAD == measure) {
     return false;
 }
 else if (Enum.MEASURE.INCORRECT == measure) {
-    // 相関係数が0.4よりも高く，0.6以下の場合
-    // ズレ修正を行う
+    // 相関係数が0.4よりも高く，0.6以下の場合，ズレ修正を行う
     int time = 0;
     Enum.MODE mode = Enum.MODE.MAX;
 
@@ -43,7 +41,7 @@ else if (Enum.MEASURE.INCORRECT == measure) {
             break;
         }
         else if (time == 2) {
-            // 相関係数が低いまま，アラートなどを出す？
+            // 相関係数が低いまま
             distance = originalDistance;
             angle = originalAngle;
             break;
@@ -53,9 +51,8 @@ else if (Enum.MEASURE.INCORRECT == measure) {
     }
 }
 else if (Enum.MEASURE.PERFECT == measure || Enum.MEASURE.CORRECT == measure) {
-    // PERFECTなら，何もしない
+    // 何もしない
 }
 else {
-    // なにかがおかしい
     return false;
 }
