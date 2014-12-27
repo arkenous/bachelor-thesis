@@ -22,8 +22,9 @@ frame=single,
 tabsize=4,
 }
 
-\renewcommand{\slash}{"/"}
-\graphicspath{{./Screenshots/}} %Where the app screenshots folder is located
+%\renewcommand{\slash}{"/"}
+\renewcommand{\slash}{/}
+\graphicspath{{./Screenshots/}, {./Graphs/}} %Where the app screenshots folder is located
 
 %
 %\usepackage[doctor]{gaiyo}      % 博士論文要旨の場合
@@ -291,31 +292,6 @@ tabsize=4,
     \section{先行研究からの改善点}
     先行研究において指摘されていた，手首のスナップを用いるような比較的動きの小さなモーションにおいて，認証率が低く出てしまうという課題を解決するために導入した機能をここに挙げる．
 
-        \subsection{モーション取得時のズレを修正する機能}
-        新規登録モードにおいてモーションを登録する際，３回分のモーションデータの入力が必要になるが，この回数ごとにモーションの時間的なズレが生じた場合，データ登録や認証時に影響を与えてしまう可能性があるため，このズレを修正する処理を３回分のデータ取得後に行うようにしている．
-
-        ３回分のデータ取得後，まずはこのデータ間の相関係数を算出し，回数ごとに全く別のモーションが入力されていないかの確認を行う．
-        そしてある程度以上の相関が見られるが，それでも相関係数が低く出てしまった場合に，ズレ修正後の相関係数を確認しつつ，データの最大値に合わせるパターン，データの最小値に合わせるパターン，データの中央値に合わせるパターンの最大三つの方法で相関係数の向上を試みる．
-        この部分のコードを付録のソースコード\ref{checkDeviationSource}に示す．
-
-        相関係数を算出した結果，ズレ修正が必要であると判断された場合，付録のソースコード\textcolor{red}{hoge}に示したズレ修正アルゴリズムを用いて修正を行う．
-
-        ズレ修正を行う前のデータをグラフ化したものを図\textcolor{red}{graph1}に，修正を行った後のデータをグラフ化したものを図\textcolor{red}{graph2}に示す．
-        % 修正前と修正後の比較グラフ
-
-        \subsection{フーリエ変換を用いたローパスフィルタ}
-        モーションデータを取得している際の，細かな手の震えなどによるデータに対する影響を取り除き，モーションデータとしての純度を高めるために，フーリエ変換を用いたローパスフィルタ処理を行っている．
-
-        フーリエ変換を用いて時間軸で表されるモーションデータを周波数領域に変換することで，モーション中の細かな手の震えなどのデータが高周波成分として現れる．
-        そしてこの高周波成分を取り除いた上で元の時間軸のデータに戻すローパスフィルタ処理を行うことで，細かな手の震えなどによるデータに対する影響を取り除いている．
-        この処理をソースコード\ref{lowpass}に示す．
-
-        % 付録に回す
-        \begin{lstlisting}[caption=ローパスフィルタ処理, label=lowpass]
-        \end{lstlisting}
-
-        ローパスフィルタにかける前のデータをグラフ化したものを図\textcolor{red}{graph1}に，ローパスフィルタにかけた後のデータをグラフ化したものを図\textcolor{red}{graph2}に示す．
-
         \subsection{モーションデータの増幅機能}
         手首を中心とするような動きの小さいモーションにおける個人認証成功率を向上させるために，モーションデータの増幅機能を実装した．
         これにより，比較的動きの小さなモーションであってもデータを増幅して用いることができ，比較的動きの大きなモーションと比べて遜色なく用いることが出来るようになった．
@@ -349,6 +325,87 @@ tabsize=4,
         \end{minipage}
     \end{figure}
 
+        増幅器にかける前のデータをグラフ化したものを図\ref{beforeAmpDataGraph}に，かけた後のデータをグラフ化したものを図\ref{afterAmpDataGraph}に示す．
+        % Data : BeforeAMP and AfterAMP
+
+        \begin{figure}[htbp]
+            \begin{minipage}{0.5\hsize}
+                \begin{center}
+                    \includegraphics[width=8cm, bb=0 0 360 216]{beforeAmpGraph.pdf}
+                \end{center}
+                \caption{増幅前のデータ}
+                \label{beforeAmpDataGraph}
+            \end{minipage}
+            \begin{minipage}{0.5\hsize}
+                \begin{center}
+                    \includegraphics[width=8cm, bb=0 0 360 216]{afterAmpGraph.pdf}
+                \end{center}
+                \caption{増幅後のデータ}
+                \label{afterAmpDataGraph}
+            \end{minipage}
+        \end{figure}
+
+        \subsection{フーリエ変換を用いたローパスフィルタ}
+        モーションデータを取得している際の，細かな手の震えなどによるデータに対する影響を取り除き，モーションデータとしての純度を高めるために，フーリエ変換を用いたローパスフィルタ処理を行っている．
+
+        フーリエ変換を用いて時間軸で表されるモーションデータを周波数領域に変換することで，モーション中の細かな手の震えなどのデータが高周波成分として現れる．
+        そしてこの高周波成分を取り除いた上で元の時間軸のデータに戻すローパスフィルタ処理を行うことで，細かな手の震えなどによるデータに対する影響を取り除いている．
+        フーリエ変換を実装する際には，CERNのColt Project\cite{coltproj}で開発されたJavaによる科学技術計算用ライブラリであるColt\cite{colt}をマルチスレッド化したParallel Colt\cite{parallelcolt}に含まれている，JTransforms\cite{jtransforms}を用いて実装している．
+        この処理をソースコード\ref{lowpassSource}に示す．
+
+        % 付録に回す
+        \lstinputlisting[caption=ローパスフィルタ処理, label=lowpassSource]
+        {Code\slash lowpass}
+
+        ローパスフィルタにかける前のデータをグラフ化したものを図\ref{beforeLowpassDataGraph}に，かけた後のデータをグラフ化したものを図\ref{afterLowpassDataGraph}に示す．
+
+        \begin{figure}[htbp]
+            \begin{minipage}{0.5\hsize}
+                \begin{center}
+                    \includegraphics[width=8cm, bb=0 0 360 216]{beforeLowpassGraph.pdf}
+                \end{center}
+                \caption{ローパスフィルタ前のデータ}
+                \label{beforeLowpassDataGraph}
+            \end{minipage}
+            \begin{minipage}{0.5\hsize}
+                \begin{center}
+                    \includegraphics[width=8cm, bb=0 0 360 216]{afterLowpassGraph.pdf}
+                \end{center}
+                \caption{ローパスフィルタ後のデータ}
+                \label{afterLowpassDataGraph}
+            \end{minipage}
+        \end{figure}
+
+        \subsection{モーション取得時のズレを修正する機能}
+        新規登録モードにおいてモーションを登録する際，３回分のモーションデータの入力が必要になるが，この回数ごとにモーションの時間的なズレが生じた場合，データ登録や認証時に影響を与えてしまう可能性があるため，このズレを修正する処理を３回分のデータ取得後に行うようにしている．
+
+        ３回分のデータ取得後，まずはこのデータ間の相関係数を算出し，回数ごとに全く別のモーションが入力されていないかの確認を行う．
+        そしてある程度以上の相関が見られるが，それでも相関係数が低く出てしまった場合に，ズレ修正後の相関係数を確認しつつ，データの最大値に合わせるパターン，データの最小値に合わせるパターン，データの中央値に合わせるパターンの最大三つの方法で相関係数の向上を試みる．
+        この部分のコードを付録のソースコード\ref{checkDeviationSource}に示す．
+
+        相関係数を算出した結果，ズレ修正が必要であると判断された場合，付録のソースコード\ref{correctDeviationSource}に示したズレ修正アルゴリズムを用いて修正を行う．
+
+        ズレ修正を行う前のデータをグラフ化したものを図\ref{beforeDeviationDataGraph}に，修正を行った後のデータをグラフ化したものを図\ref{afterDeviationDataGraph}に示す．
+        \textcolor{red}{ズレ修正が働いたデータを取ってくる}
+
+        % 修正前と修正後の比較グラフ
+        \begin{figure}[htbp]
+            \begin{minipage}{0.5\hsize}
+                \begin{center}
+                    \includegraphics[width=8cm, bb=0 0 360 216]{beforeDeviationGraph.pdf}
+                \end{center}
+                \caption{ズレ修正前のデータ}
+                \label{beforeDeviationDataGraph}
+            \end{minipage}
+            \begin{minipage}{0.5\hsize}
+                \begin{center}
+                    \includegraphics[width=8cm, bb=0 0 360 216]{afterDeviationGraph.pdf}
+                \end{center}
+                \caption{ズレ修正後のデータ}
+                \label{afterDeviationDataGraph}
+            \end{minipage}
+        \end{figure}
+
         \subsection{モーション取得時のインターバル及びヴァイブレーション機能}
         新規登録モード及び認証試験モードにおいて，モーション取得時の時間経過が把握しやすいように，１秒毎に端末をヴァイブレーションさせる機能を実装した．
         また，データ取得時のインターバルからデータ取得に移る際には通常より長めのヴァイブレーションにすることで，データ取得開始のタイミングを明確に意識できるようにした．
@@ -374,8 +431,12 @@ tabsize=4,
 また，研究テーマの選定をはじめ，日頃から有益なアドバイスを頂いた同研究室の皆様に感謝いたします．
 
 \begin{thebibliography}{9}
-    \bibitem{sakamoto}{坂本 翔，”ユーザの直感的な入力をとらえるための３軸加速度センサによるジェスチャ認識の研究 ”，2009 年度公立はこだて未来大学卒業論文．}
-    \bibitem{tozawa}{兎澤星伸，”三軸加速度センサ及び三軸ジャイロセンサを用いた認証アプリケーションの開発”，2012年度卒業研究．}
+    \bibitem{sakamoto}{坂本 翔，ユーザの直感的な入力をとらえるための３軸加速度センサによるジェスチャ認識の研究，2009年度公立はこだて未来大学卒業論文．}
+    \bibitem{tozawa}{兎澤星伸，三軸加速度センサ及び三軸ジャイロセンサを用いた認証アプリケーションの開発，2012年度卒業研究．}
+    \bibitem{coltproj}{Colt Project，https:\slash \slash dst.lbl.gov\slash ACSSoftware\slash colt\slash ，2014年12月27日確認．}
+    \bibitem{colt}{Colt，https:\slash \slash github.com\slash carlsonp\slash Colt，2014年12月27日確認．}
+    \bibitem{parallelcolt}{Parallel Colt，https:\slash \slash sites.google.com\slash site\slash piotrwendykier\slash software\slash parallelcolt，2014年12月27日確認．}
+    \bibitem{jtransforms}{JTransforms，https:\slash \slash sites.google.com\slash site\slash piotrwendykier\slash software\slash jtransforms，2014年12月27日確認．}
 \end{thebibliography}
 
 \appendix
@@ -384,4 +445,8 @@ tabsize=4,
     \section{ズレ修正の判断部分}
     \lstinputlisting[label=checkDeviationSource]
     {Code\slash checkDeviation}
+
+    \section{スレ修正アルゴリズム}
+    \lstinputlisting[label=correctDeviationSource]
+    {Code\slash correctDeviation}
 \end{document}

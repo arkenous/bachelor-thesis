@@ -1,25 +1,31 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces モーションセンサの座標系イメージ}}{5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces モーションセンサの座標系イメージ}}{6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces システム動作フロー図}}{7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces スタート画面}}{8}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces モード選択ダイアログ}}{8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces ユーザ名入力画面}}{9}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces エラー通知}}{9}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces モーション登録画面}}{9}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces 処理待ちダイアログ}}{11}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces 登録完了ダイアログ}}{11}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 登録失敗ダイアログ}}{11}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces ユーザ名入力画面}}{12}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 認証試験画面}}{12}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces エラー通知}}{12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces 認証成功ダイアログ}}{14}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces 認証失敗ダイアログ}}{14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces ユーザ名一覧画面}}{15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces モーションデータ一覧画面}}{15}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces 新規登録モードメニュー画面}}{18}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces 増幅器設定ダイアログ}}{18}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces システム動作フロー図}}{8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces スタート画面}}{9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces モード選択ダイアログ}}{9}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces ユーザ名入力画面}}{10}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces エラー通知}}{10}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces モーション登録画面}}{10}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 処理待ちダイアログ}}{12}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces 登録完了ダイアログ}}{12}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 登録失敗ダイアログ}}{12}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces ユーザ名入力画面}}{13}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 認証試験画面}}{13}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces エラー通知}}{13}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces 認証成功ダイアログ}}{15}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces 認証失敗ダイアログ}}{15}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces ユーザ名一覧画面}}{16}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces モーションデータ一覧画面}}{16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces 新規登録モードメニュー画面}}{19}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces 増幅器設定ダイアログ}}{19}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces 増幅前のデータ}}{19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces 増幅後のデータ}}{19}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces ローパスフィルタ前のデータ}}{22}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces ローパスフィルタ後のデータ}}{22}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces ズレ修正前のデータ}}{22}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces ズレ修正後のデータ}}{22}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
