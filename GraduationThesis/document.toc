@@ -14,13 +14,13 @@
 \contentsline {subsection}{\numberline {3.3.1}モーションデータの増幅機能}{15}
 \contentsline {subsection}{\numberline {3.3.2}フーリエ変換を用いたローパスフィルタ}{19}
 \contentsline {subsection}{\numberline {3.3.3}モーション取得時のズレを修正する機能}{21}
-\contentsline {subsection}{\numberline {3.3.4}モーション取得時のインターバル及びヴァイブレーション機能}{21}
-\contentsline {chapter}{\numberline {第4章}実験と考察}{23}
-\contentsline {section}{\numberline {4.1}実験方法}{23}
-\contentsline {section}{\numberline {4.2}実験結果}{23}
-\contentsline {section}{\numberline {4.3}考察}{23}
-\contentsline {section}{\numberline {4.4}課題}{23}
-\contentsline {chapter}{\numberline {第5章}おわりに}{24}
-\contentsline {chapter}{\numberline {付 録A }ソースコード}{27}
-\contentsline {section}{\numberline {A.1}ズレ修正の判断部分}{27}
-\contentsline {section}{\numberline {A.2}スレ修正アルゴリズム}{29}
+\contentsline {subsection}{\numberline {3.3.4}モーション取得時のインターバル及びヴァイブレーション機能}{24}
+\contentsline {chapter}{\numberline {第4章}実験と考察}{25}
+\contentsline {section}{\numberline {4.1}実験方法}{25}
+\contentsline {section}{\numberline {4.2}実験結果}{25}
+\contentsline {section}{\numberline {4.3}考察}{25}
+\contentsline {section}{\numberline {4.4}課題}{25}
+\contentsline {chapter}{\numberline {第5章}おわりに}{26}
+\contentsline {chapter}{\numberline {付 録A }ソースコード}{29}
+\contentsline {section}{\numberline {A.1}ズレ修正の判断部分}{29}
+\contentsline {section}{\numberline {A.2}ズレ修正アルゴリズム}{31}

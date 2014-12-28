@@ -306,7 +306,7 @@ tabsize=4,
         \lstinputlisting[caption=データレンジチェック, label=dataRangeCheckSource]
         {Code\slash dataRangeCheck}
 
-        データをどれだけ増幅させるかを決める値や，データの最大値と最小値の差がどれだけあれば増幅を行うかを決める閾値に関しては，新規登録モードにおいてメニューキーを押すことで表示される，図\ref{regMenu}のようなメニューアイテム内の増幅器設定を選択することで表示される，図\ref{amplifierSettings}のような設定ダイアログより変更することが出来る．
+        データをどれだけ増幅させるかを決める値やデータの最大値と最小値の差がどれだけあれば増幅を行うかを決める閾値に関しては，新規登録モードにおいてメニューキーを押すことで表示される図\ref{regMenu}のようなメニュー内の増幅器設定を選択することで表示される，図\ref{amplifierSettings}のような設定ダイアログより変更することが出来る．
 
     \begin{figure}[htbp]
         \begin{minipage}{0.5\hsize}
@@ -381,7 +381,10 @@ tabsize=4,
 
         ３回分のデータ取得後，まずはこのデータ間の相関係数を算出し，回数ごとに全く別のモーションが入力されていないかの確認を行う．
         そしてある程度以上の相関が見られるが，それでも相関係数が低く出てしまった場合に，ズレ修正後の相関係数を確認しつつ，データの最大値に合わせるパターン，データの最小値に合わせるパターン，データの中央値に合わせるパターンの最大三つの方法で相関係数の向上を試みる．
-        この部分のコードを付録のソースコード\ref{checkDeviationSource}に示す．
+        この部分のコードをソースコード\ref{checkDeviationSource}に示す．
+
+        \lstinputlisting[caption=ズレ修正の判断部分, label=checkDeviationSource]
+        {Code\slash checkDeviation}
 
         相関係数を算出した結果，ズレ修正が必要であると判断された場合，付録のソースコード\ref{correctDeviationSource}に示したズレ修正アルゴリズムを用いて修正を行う．
 
@@ -445,7 +448,7 @@ tabsize=4,
     \lstinputlisting[label=checkDeviationSource]
     {Code\slash checkDeviation}
 
-    \section{スレ修正アルゴリズム}
+    \section{ズレ修正アルゴリズム}
     \lstinputlisting[label=correctDeviationSource]
     {Code\slash correctDeviation}
 \end{document}
