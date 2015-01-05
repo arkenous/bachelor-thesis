@@ -22,5 +22,4 @@
 \contentsline {section}{\numberline {4.4}課題}{25}
 \contentsline {chapter}{\numberline {第5章}おわりに}{26}
 \contentsline {chapter}{\numberline {付 録A }ソースコード}{29}
-\contentsline {section}{\numberline {A.1}ズレ修正の判断部分}{29}
-\contentsline {section}{\numberline {A.2}ズレ修正アルゴリズム}{31}
+\contentsline {section}{\numberline {A.1}ズレ修正アルゴリズム}{29}
