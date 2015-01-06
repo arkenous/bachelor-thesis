@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  5 JAN 2015 15:42
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  6 JAN 2015 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,9 +199,7 @@ File: SmartphoneSensor.pdf Graphic file (type pdf)
 ]
 第 3 章
 File: Flow.pdf Graphic file (type pdf)
-<Flow.pdf> [8
-
-]
+<Flow.pdf>
 File: ./Screenshots/Start.pdf Graphic file (type pdf)
  <./Screenshots/Start.pdf>
 File: ./Screenshots/ModeSelect.pdf Graphic file (type pdf)
@@ -210,20 +208,23 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 119--133
 []$[]$ $[]$ 
  []
 
+[8
+
+] [9]
 File: ./Screenshots/NameInput.pdf Graphic file (type pdf)
-<./Screenshots/NameInput.pdf>
+ <./Screenshots/NameInput.pdf>
 File: ./Screenshots/NameInputError.pdf Graphic file (type pdf)
  <./Screenshots/NameInputError.pdf>
 File: ./Screenshots/Reg.pdf Graphic file (type pdf)
 
-<./Screenshots/Reg.pdf> [9]
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 170.
+<./Screenshots/Reg.pdf>
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 169.
 
  (/usr/share/texmf-dist/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
 
 [10] [11]
 File: ./Screenshots/RegProgress.pdf Graphic file (type pdf)
@@ -245,7 +246,7 @@ File: ./Screenshots/AuthSuccess.pdf Graphic file (type pdf)
  <./Screenshots/AuthSuccess.pdf>
 File: ./Screenshots/AuthFail.pdf Graphic file (type pdf)
  <./Screenshots/AuthFail.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 254--268
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 253--267
 []$[]$ $[]$ 
  []
 
@@ -253,7 +254,7 @@ File: ./Screenshots/UserList.pdf Graphic file (type pdf)
 <./Screenshots/UserList.pdf>
 File: ./Screenshots/DataList.pdf Graphic file (type pdf)
  <./Screenshots/DataList.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 277--291
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 276--290
 []$[]$ $[]$ 
  []
 
@@ -271,7 +272,7 @@ File: ./Screenshots/RegMenu.pdf Graphic file (type pdf)
 <./Screenshots/RegMenu.pdf>
 File: ./Screenshots/AmplifierSettings.pdf Graphic file (type pdf)
  <./Screenshots/AmplifierSettings.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 313--327
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 314--328
 []$[]$ $[]$ 
  []
 
@@ -279,7 +280,7 @@ File: ./Graphs/beforeAmpGraph.pdf Graphic file (type pdf)
 <./Graphs/beforeAmpGraph.pdf>
 File: ./Graphs/afterAmpGraph.pdf Graphic file (type pdf)
  <./Graphs/afterAmpGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 333--347
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 334--348
 []$[]$ $[]$ 
  []
 
@@ -289,7 +290,7 @@ File: ./Graphs/beforeLowpassGraph.pdf Graphic file (type pdf)
 File: ./Graphs/afterLowpassGraph.pdf Graphic file (type pdf)
 
 <./Graphs/afterLowpassGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 364--378
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 365--379
 []$[]$ $[]$ 
  []
 
@@ -299,7 +300,7 @@ File: ./Graphs/beforeDeviationGraph.pdf Graphic file (type pdf)
 File: ./Graphs/afterDeviationGraph.pdf Graphic file (type pdf)
 
 <./Graphs/afterDeviationGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 396--410
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 397--411
 []$[]$ $[]$ 
  []
 
@@ -320,7 +321,7 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 396--410
 [29
 
 ]
-Overfull \hbox (205.56898pt too wide) in paragraph at lines 456--456
+Overfull \hbox (205.56898pt too wide) in paragraph at lines 457--457
 [][][][] 
  []
 
@@ -328,10 +329,10 @@ Overfull \hbox (205.56898pt too wide) in paragraph at lines 456--456
 Here is how much of TeX's memory you used:
  2484 strings out of 493800
  35023 string characters out of 6156126
- 253340 words of memory out of 5000000
+ 255340 words of memory out of 5000000
  5905 multiletter control sequences out of 15000+600000
  18563 words of font info for 67 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 28i,6n,40p,363b,1547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,6n,40p,363b,1543s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.dvi (33 pages, 142400 bytes).
+Output written on document.dvi (33 pages, 142520 bytes).

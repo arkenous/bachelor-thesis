@@ -7,12 +7,12 @@
 \contentsline {chapter}{\numberline {第3章}本研究のシステム}{8}
 \contentsline {section}{\numberline {3.1}本研究の概要}{8}
 \contentsline {section}{\numberline {3.2}システムの概要}{8}
-\contentsline {subsection}{\numberline {3.2.1}新規登録モード}{9}
+\contentsline {subsection}{\numberline {3.2.1}新規登録モード}{10}
 \contentsline {subsection}{\numberline {3.2.2}認証試験モード}{12}
 \contentsline {subsection}{\numberline {3.2.3}データ閲覧モード}{15}
 \contentsline {section}{\numberline {3.3}先行研究からの改善点}{15}
 \contentsline {subsection}{\numberline {3.3.1}モーションデータの増幅機能}{15}
-\contentsline {subsection}{\numberline {3.3.2}フーリエ変換を用いたローパスフィルタ}{19}
+\contentsline {subsection}{\numberline {3.3.2}フーリエ変換を用いたローパスフィルタ}{18}
 \contentsline {subsection}{\numberline {3.3.3}モーション取得時のズレを修正する機能}{21}
 \contentsline {subsection}{\numberline {3.3.4}モーション取得時のインターバル及びヴァイブレーション機能}{24}
 \contentsline {chapter}{\numberline {第4章}実験と考察}{25}
