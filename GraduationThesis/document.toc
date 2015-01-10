@@ -9,17 +9,17 @@
 \contentsline {section}{\numberline {3.2}システムの概要}{8}
 \contentsline {subsection}{\numberline {3.2.1}新規登録モード}{10}
 \contentsline {subsection}{\numberline {3.2.2}認証試験モード}{12}
-\contentsline {subsection}{\numberline {3.2.3}データ閲覧モード}{15}
-\contentsline {section}{\numberline {3.3}先行研究からの改善点}{15}
-\contentsline {subsection}{\numberline {3.3.1}モーションデータの増幅機能}{15}
-\contentsline {subsection}{\numberline {3.3.2}フーリエ変換を用いたローパスフィルタ}{18}
-\contentsline {subsection}{\numberline {3.3.3}モーション取得時のズレを修正する機能}{21}
-\contentsline {subsection}{\numberline {3.3.4}モーション取得時のインターバル及びヴァイブレーション機能}{24}
-\contentsline {chapter}{\numberline {第4章}実験と考察}{25}
-\contentsline {section}{\numberline {4.1}実験方法}{25}
-\contentsline {section}{\numberline {4.2}実験結果}{25}
-\contentsline {section}{\numberline {4.3}考察}{25}
-\contentsline {section}{\numberline {4.4}課題}{25}
-\contentsline {chapter}{\numberline {第5章}おわりに}{26}
-\contentsline {chapter}{\numberline {付 録A }ソースコード}{29}
-\contentsline {section}{\numberline {A.1}ズレ修正アルゴリズム}{29}
+\contentsline {subsection}{\numberline {3.2.3}データ閲覧モード}{14}
+\contentsline {section}{\numberline {3.3}先行研究からの改善点}{16}
+\contentsline {subsection}{\numberline {3.3.1}モーションデータの増幅機能}{16}
+\contentsline {subsection}{\numberline {3.3.2}フーリエ変換を用いたローパスフィルタ}{17}
+\contentsline {subsection}{\numberline {3.3.3}モーション取得時のズレを修正する機能}{20}
+\contentsline {subsection}{\numberline {3.3.4}モーション取得時のインターバル及びヴァイブレーション機能}{22}
+\contentsline {chapter}{\numberline {第4章}実験と考察}{24}
+\contentsline {section}{\numberline {4.1}実験方法}{24}
+\contentsline {section}{\numberline {4.2}実験結果}{24}
+\contentsline {section}{\numberline {4.3}考察}{24}
+\contentsline {section}{\numberline {4.4}課題}{24}
+\contentsline {chapter}{\numberline {第5章}おわりに}{25}
+\contentsline {chapter}{\numberline {付 録A }ソースコード}{28}
+\contentsline {section}{\numberline {A.1}ズレ修正アルゴリズム}{28}

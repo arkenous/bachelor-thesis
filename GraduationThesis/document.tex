@@ -13,11 +13,14 @@
 \renewcommand{\lstlistingname}{ソース}
 \lstset
 {
-breaklines = true,
-language=Java,
-keywordstyle={\color{purple}},
-commentstyle={\color{brown}},
-numbers=left,
+language=Java, % lstlisting内の言語の指定
+numbers=left, % 行番号を左端に表示する
+breaklines = true, % 行が長くなってしまった場合の改行を行う
+basicstyle={\small}, % 標準の書式設定
+identifierstyle={\small},
+keywordstyle={\small\bfseries\color{purple}},
+commentstyle={\small\itshape\color{brown}},
+stringstyle={\small\ttfamily},
 frame=single,
 tabsize=4,
 }
@@ -25,6 +28,7 @@ tabsize=4,
 %\renewcommand{\slash}{"/"}
 \renewcommand{\slash}{/}
 \graphicspath{{./Screenshots/}, {./Graphs/}} %Where the app screenshots folder is located
+\usepackage{otf}
 
 %
 %\usepackage[doctor]{gaiyo}      % 博士論文要旨の場合
@@ -35,7 +39,7 @@ tabsize=4,
 \setlength\textfloatsep{0pt}
 
 \title{\bfseries スマートフォンのモーションセンサを利用した\\個人認証アプリケーションの開発}
-\author{情11-170　高坂 賢佑}
+\author{情11-170　\UTF{9AD9}坂 賢佑}
 \date{}
 \renewcommand{\bibname}{参考文献，参考URL等}
 
@@ -50,7 +54,7 @@ tabsize=4,
 しかし，この認証方法は画面ロックを解除するたびに画面に表示されたソフトウェアキーボードを目で見て指でタッチして操作する必要があるため，ユーザにとって煩雑な作業である．
 また，あらかじめ決められた文字種の中から一つずつ選択したものを元にパスコードを構築していくという性質上，パターン数が限られ自由度が限定されてしまう．
 
-そこで，パスコード認証が抱える認証の煩雑さを解消し，かつ自由度が高くより直感的に個人認証を行えるアプリケーションを開発する．
+そこで，本研究ではパスコード認証が抱える認証の煩雑さを解消し，かつ自由度が高くより直感的に個人認証を行えるアプリケーションを開発する．
 このアプリケーションには，一般的なスマートフォンに搭載されている加速度センサとジャイロセンサを用いる．
 
 \chapter{使用するセンサについて}
@@ -77,7 +81,7 @@ tabsize=4,
 	\section{坂本の研究}
 	坂本の研究\cite{sakamoto}では，ユーザが入力したモーションの数値化に加速度センサを用い，あらかじめ保存しておいた複数のジェスチャパターンのデータと認証時に入力したデータをパターンマッチング方式のアルゴリズムを用いて比較することで個人認証を行った．
 
-    しかし，このプログラムは扱うジェスチャによって認証率が高いものと低いものの二分化の傾向が見られるという問題点があった．
+    しかし，このプログラムは扱うジェスチャによって認証率が高いものと低いものに二分化する傾向が見られるという問題点があった．
 
 	\section{兎澤の研究}
     兎澤の研究\cite{tozawa}では，モーションの数値化に加速度センサとジャイロセンサを用い，認証システムの中核に相関関数を用いたシステムを開発し，ユーザに3回入力させたモーションの平均値データと認証時に入力したデータの類似性を調べることで個人認証を行った．
@@ -141,7 +145,7 @@ tabsize=4,
         OKボタンを押した際の名前の入力値チェックを行うコードをソースコード\ref{regCheckInputNameSource}に示す．
 
         % ユーザ名入力画面
-        \begin{figure}[hbtp]
+        \begin{figure}[tbhp]
             \begin{minipage}{0.33\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{NameInput.pdf}
@@ -183,7 +187,7 @@ tabsize=4,
         このダイアログのOKボタンを押すことでプログラム内部のモーションデータ取得カウンタが初期化され，モーションデータの取り直しをさせる．
 
         % モーション登録画面
-        \begin{figure}[bhtp]
+        \begin{figure}[bthp]
             \begin{minipage}{0.33\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{RegProgress.pdf}
@@ -213,7 +217,7 @@ tabsize=4,
         モーションの登録がなされていなかった場合，図\ref{authNameInputError}のようなダイアログを表示する．
         指定されたユーザ名で既にモーションの登録がなされているかを確認するコードをソースコード\ref{authCheckInputNameSource}に示す．
 
-        \begin{figure}[tbp]
+        \begin{figure}[htbp]
             \begin{minipage}{0.33\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{NameInput.pdf}
@@ -267,10 +271,10 @@ tabsize=4,
         \end{figure}
 
 	    \subsection{データ閲覧モード}
-	    データ閲覧モードでは，新規登録モードにおいて登録されたユーザ名を一覧で見ることが出来る．
-        また，その中からユーザ名を選択するとそのユーザが登録したモーションデータを見ることが出来る．
+        % 表現を改良する必要があるかもしれない
+	    データ閲覧モードでは，新規登録モードにおいて登録されたユーザ名とそれぞれのユーザが登録したモーションデータを閲覧することが出来る．
         このモードを選択すると，まず図\ref{userList}のようなユーザ名の一覧が表示される．
-        ここでデータを閲覧したいユーザ名を選択することで，図\ref{dataList}のようなモーションデータ一覧が表示される．
+        ここでデータを閲覧したいユーザ名を選択することで，図\ref{dataList}のようにモーションを調べることが出来る．
 
         \begin{figure}[tbp]
             \begin{minipage}{0.5\hsize}
@@ -297,14 +301,12 @@ tabsize=4,
         これにより，比較的動きの小さなモーションであってもデータを増幅して用いることができ，比較的動きの大きなモーションと比べて遜色なく用いることが出来るようになった．
         この処理をソースコード\ref{amplifierSource}に示す．
 
-\newpage
         \lstinputlisting[caption=モーションデータ増幅機能, label=amplifierSource]
         {Code\slash amplifier}
 
         この増幅機能は，事前にデータの最大値と最小値の差を取り，得られた値があらかじめ設定された閾値を下回った場合にのみ機能するようにしている．
         この処理をソースコード\ref{dataRangeCheckSource}に示す．
 
-\newpage
         \lstinputlisting[caption=データレンジチェック, label=dataRangeCheckSource]
         {Code\slash dataRangeCheck}
 
