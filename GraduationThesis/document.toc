@@ -18,8 +18,9 @@
 \contentsline {chapter}{\numberline {第4章}実験と考察}{24}
 \contentsline {section}{\numberline {4.1}実験方法}{24}
 \contentsline {section}{\numberline {4.2}実験結果}{24}
-\contentsline {section}{\numberline {4.3}考察}{24}
-\contentsline {section}{\numberline {4.4}課題}{24}
-\contentsline {chapter}{\numberline {第5章}おわりに}{25}
-\contentsline {chapter}{\numberline {付 録A }ソースコード}{28}
-\contentsline {section}{\numberline {A.1}ズレ修正アルゴリズム}{28}
+\contentsline {section}{\numberline {4.3}考察}{25}
+\contentsline {section}{\numberline {4.4}課題}{25}
+\contentsline {chapter}{\numberline {第5章}おわりに}{26}
+\contentsline {chapter}{\numberline {付 録A }ソースコード}{29}
+\contentsline {section}{\numberline {A.1}ズレ修正アルゴリズム}{29}
+\contentsline {chapter}{\numberline {付 録B }実験結果詳細}{32}
