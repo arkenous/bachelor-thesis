@@ -20,7 +20,8 @@ import java.util.ArrayList;
  */
 public class ManageData {
 	/**
-	 * Float型の三次元配列データをアウトプットする．保存先は，SDカードディレクトリ/folderName/userName/fileName+回数+次元
+	 * Float型の三次元配列データをアウトプットする．
+     * 保存先は，SDカードディレクトリ/folderName/userName/fileName+回数+次元
 	 *
 	 * @param folderName 保存するフォルダ名
 	 * @param dataName   保存するデータ名
@@ -101,7 +102,8 @@ public class ManageData {
 
 
 	/**
-	 * Double型の２次元配列データをアウトプットする． 保存先は，SDカードディレクトリ/folderName/userName/fileName+次元
+	 * Double型の２次元配列データをアウトプットする．
+     * 保存先は，SDカードディレクトリ/folderName/userName/fileName+次元
 	 *
 	 * @param folderName 保存するフォルダ名
 	 * @param dataName   保存するデータ名
@@ -181,7 +183,8 @@ public class ManageData {
 
 
 	/**
-	 * Double型の三次元配列データをアウトプットする． 保存先は，SDカードディレクトリ/folderName/userName/fileName+回数+次元
+	 * Double型の三次元配列データをアウトプットする．
+     * 保存先は，SDカードディレクトリ/folderName/userName/fileName+回数+次元
 	 *
 	 * @param folderName 保存するフォルダ名
 	 * @param dataName   保存するデータ名
@@ -261,7 +264,8 @@ public class ManageData {
 
 
 	/**
-	 * Double型の２次元配列データをアウトプットする． 保存先は，SDカードディレクトリ/folderName/userName/fileName+次元
+	 * Double型の２次元配列データをアウトプットする．
+     * 保存先は，SDカードディレクトリ/folderName/userName/fileName+次元
 	 *
 	 * @param folderName 保存するフォルダ名
 	 * @param dataName   保存するデータ名
@@ -338,7 +342,8 @@ public class ManageData {
 
 
 	/**
-	 * Double型の２次元配列データをアウトプットする． 保存先は，SDカードディレクトリ/MotionAuth/folderName/userName
+	 * Double型の２次元配列データをアウトプットする．
+     * 保存先は，SDカードディレクトリ/MotionAuth/folderName/userName
 	 *
 	 * @param folderName 保存するフォルダ名
 	 * @param userName   保存するユーザ名
@@ -570,7 +575,6 @@ public class ManageData {
 	 * @param context         呼び出し元のコンテキスト
 	 */
 	// 受け取ったデータをCipherクラスに渡し，暗号化されたデータを保存する
-	//public void writeRegistedData (String userName, double[][] averageDistance, double[][] averageAngle, boolean isAmplify, Context context) {
 	public void writeRegistedData (String userName, double[][] averageDistance, double[][] averageAngle, double ampValue, Context context) {
 
 		LogUtil.log(Log.INFO);

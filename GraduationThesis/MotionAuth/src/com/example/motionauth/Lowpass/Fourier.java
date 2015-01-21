@@ -18,7 +18,8 @@ public class Fourier {
 	private ManageData mManageData = new ManageData();
 
 	/**
-	 * double型三次元配列の入力データに対し，フーリエ変換を用いてローパスフィルタリングを行ってデータの平滑化を行う
+	 * double型三次元配列の入力データに対し，
+     * フーリエ変換を用いてローパスフィルタリングを行ってデータの平滑化を行う
 	 *
 	 * @param data     データ平滑化を行うdouble型三次元配列データ
 	 * @param dataName アウトプット用，データ種別
@@ -100,7 +101,8 @@ public class Fourier {
 
 
 	/**
-	 * double型二次元配列の入力データに対し，フーリエ変換を用いてローパスフィルタリングを行ってデータの平滑化を行う
+	 * double型二次元配列の入力データに対し，
+     * フーリエ変換を用いてローパスフィルタリングを行ってデータの平滑化を行う
 	 *
 	 * @param data     データ平滑化を行うdouble型三次元配列データ
 	 * @param dataName アウトプット用，データ種別

@@ -8,6 +8,7 @@ else if (Enum.MEASURE.INCORRECT == measure) {
     // 相関係数が0.4よりも高く，0.6以下の場合，ズレ修正を行う
     int time = 0;
     Enum.MODE mode = Enum.MODE.MAX;
+    Enum.TARGET target = Enum.MODE.DISTANCE;
 
     double[][][] originalDistance = distance;
     double[][][] originalAngle = angle;
@@ -16,17 +17,40 @@ else if (Enum.MEASURE.INCORRECT == measure) {
         switch (time) {
             case 0:
                 mode = Enum.MODE.MAX;
+                target = Enum.TARGET.DISTANCE;
                 break;
             case 1:
-                mode = Enum.MODE.MIN;
+                mode = Enum.MODE.MAX;
+                target = Enum.TARGET.ANGLE;
                 break;
             case 2:
+                mode = Enum.MODE.MIN;
+                target = Enum.TARGET.DISTANCE;
+                break;
+            case 3:
+                mode = Enum.MODE.MIN;
+                target = Enum.TARGET.ANGLE;
+                break;
+            case 4:
                 mode = Enum.MODE.MEDIAN;
+                target = Enum.TARGET.DISTANCE;
+                break;
+            case 5:
+                mode = Enum.MODE.MEDIAN;
+                target = Enum.TARGET.ANGLE;
                 break;
         }
 
-        distance = mCorrectDeviation.correctDeviation(originalDistance, mode);
-        angle = mCorrectDeviation.correctDeviation(originalAngle, mode);
+        double[][][][] deviatedValue = mCorrectDeviation.correctDeviation(originalDistance, originalAngle, mode, target);
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 100; k++) {
+                    distance[i][j][k] = deviatedValue[0][i][j][k];
+                    angle[i][j][k] = deviatedValue[1][i][j][k];
+                }
+            }
+        }
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 100; j++) {
