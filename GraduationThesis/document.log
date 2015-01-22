@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  21 JAN 2015 23:03
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  22 JAN 2015 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,9 +278,9 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 File: SmartphoneSensor.pdf Graphic file (type pdf)
 <SmartphoneSensor.pdf> [7
 
-] [8]
+]
 第 2 章
-[9
+[8
 
 ]
 第 3 章
@@ -294,9 +294,9 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 148--162
 []$[]$ $[]$ 
  []
 
-[10
+[9
 
-] [11]
+] [10]
 File: ./Screenshots/NameInput.pdf Graphic file (type pdf)
  <./Screenshots/NameInput.pdf>
 File: ./Screenshots/NameInputError.pdf Graphic file (type pdf)
@@ -342,14 +342,14 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
 (Font)              scaled to size 9.6222pt on input line 198.
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
 (Font)              scaled to size 9.6222pt on input line 198.
-[12] (I search kanjifont definition file: . . )
+[11] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 198.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [13]
+) [12]
 File: ./Screenshots/RegProgress.pdf Graphic file (type pdf)
 
 <./Screenshots/RegProgress.pdf>
@@ -364,7 +364,7 @@ File: ./Screenshots/Auth.pdf Graphic file (type pdf)
 
 <./Screenshots/Auth.pdf>
 File: ./Screenshots/AuthNameInputError.pdf Graphic file (type pdf)
- <./Screenshots/AuthNameInputError.pdf> [14] [15]
+ <./Screenshots/AuthNameInputError.pdf> [13] [14]
 File: ./Screenshots/AuthSuccess.pdf Graphic file (type pdf)
 
 <./Screenshots/AuthSuccess.pdf>
@@ -382,7 +382,7 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 307--321
 []$[]$ $[]$ 
  []
 
-[16] [17]
+[15] [16]
 LaTeX Font Info:    Try loading font information for OML+pnc on input line 332.
 
  (/usr/share/texmf-dist/tex/latex/psnfss/omlpnc.fd
@@ -390,7 +390,7 @@ File: omlpnc.fd
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 332.
- [18]
+ [17]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 338.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -412,7 +412,7 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 363--377
 []$[]$ $[]$ 
  []
 
-[19] [20] [21]
+[18] [19] [20]
 File: ./Graphs/beforeLowpassGraph.pdf Graphic file (type pdf)
  <./Graphs/beforeLowpassGraph.pdf>
 File: ./Graphs/afterLowpassGraph.pdf Graphic file (type pdf)
@@ -422,7 +422,7 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 394--408
 []$[]$ $[]$ 
  []
 
-[22]
+[21]
 File: ./Graphs/beforeDeviationGraph.pdf Graphic file (type pdf)
  <./Graphs/beforeDeviationGraph.pdf>
 File: ./Graphs/afterDeviationGraph.pdf Graphic file (type pdf)
@@ -431,71 +431,64 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 423--437
 []$[]$ $[]$ 
  []
 
-[23]
+[22]
 第 4 章
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 451.
-[24
+[23
 
-]
-
-LaTeX Warning: Reference `detail' on page 25 undefined on input line 499.
-
-[25]
+] [24]
 第 5 章
-[26
+[25
+
+] [26
 
 ] [27
 
-] [28
-
 ]
 付 録 A  
-[29
+[28
 
-] [30] [31]
+] [29] [30]
 Overfull \hbox (147.99979pt too wide) in paragraph at lines 544--544
 [][][][] 
  []
 
-[32] [33]
+[31] [32]
 付 録 B  
-[34
+[33
 
-] [35]
+] [34]
 付 録 C  
 LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 609.
-[36
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 610.
+[35
 
-] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
-[51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65]
-[66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80]
-[81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95]
-[96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
-[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
-[121] [122] [123] [124] [125]
+] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
+[50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
+[65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79]
+[80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94]
+[95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107]
+[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
+[120] [121] [122] [123] [124]
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 658.
- [126] [127] [128] [129] [130] [131] [132]
-[133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143] [144]
-[145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156]
-[157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 659.
+ [125] [126] [127] [128] [129] [130] [131]
+[132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143]
+[144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155]
+[156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167]
 (./document.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  5031 strings out of 493800
  67876 string characters out of 6156126
- 394130 words of memory out of 5000000
+ 394103 words of memory out of 5000000
  8374 multiletter control sequences out of 15000+600000
  19298 words of font info for 83 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,8n,59p,370b,1691s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.dvi (169 pages, 1701332 bytes).
+Output written on document.dvi (168 pages, 1700944 bytes).
