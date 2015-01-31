@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  22 JAN 2015 13:50
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  31 JAN 2015 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,7 +290,7 @@ File: ./Screenshots/Start.pdf Graphic file (type pdf)
  <./Screenshots/Start.pdf>
 File: ./Screenshots/ModeSelect.pdf Graphic file (type pdf)
  <./Screenshots/ModeSelect.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 148--162
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 163--177
 []$[]$ $[]$ 
  []
 
@@ -310,41 +310,41 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 198.
+(Font)              scaled to size 9.6222pt on input line 216.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 198.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 216.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 198.
+(Font)              scaled to size 9.6222pt on input line 216.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 198.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 216.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 198.
+(Font)              scaled to size 9.6222pt on input line 216.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 198.
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 198.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 216.
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 216.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 198.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
 
 
 LaTeX Font Warning: Font shape `JT1/hmc/m/it' undefined
-(Font)              using `JT1/hmc/m/n' instead on input line 198.
+(Font)              using `JT1/hmc/m/n' instead on input line 216.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/m/it' undefined
-(Font)              using `JY1/hmc/m/n' instead on input line 198.
+(Font)              using `JY1/hmc/m/n' instead on input line 216.
 
 LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
-(Font)              scaled to size 9.6222pt on input line 198.
+(Font)              scaled to size 9.6222pt on input line 216.
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
-(Font)              scaled to size 9.6222pt on input line 198.
+(Font)              scaled to size 9.6222pt on input line 216.
 [11] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 198.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 216.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -370,7 +370,7 @@ File: ./Screenshots/AuthSuccess.pdf Graphic file (type pdf)
 <./Screenshots/AuthSuccess.pdf>
 File: ./Screenshots/AuthFail.pdf Graphic file (type pdf)
  <./Screenshots/AuthFail.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 284--298
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 305--319
 []$[]$ $[]$ 
  []
 
@@ -378,29 +378,29 @@ File: ./Screenshots/UserList.pdf Graphic file (type pdf)
 <./Screenshots/UserList.pdf>
 File: ./Screenshots/DataList.pdf Graphic file (type pdf)
  <./Screenshots/DataList.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 307--321
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 331--345
 []$[]$ $[]$ 
  []
 
 [15] [16]
-LaTeX Font Info:    Try loading font information for OML+pnc on input line 332.
+LaTeX Font Info:    Try loading font information for OML+pnc on input line 364.
 
  (/usr/share/texmf-dist/tex/latex/psnfss/omlpnc.fd
 File: omlpnc.fd 
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 332.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 364.
  [17]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 338.
+(Font)              <5> on input line 370.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 338.
+(Font)              scaled to size 4.8111pt on input line 370.
 File: ./Screenshots/RegMenu.pdf Graphic file (type pdf)
 
 <./Screenshots/RegMenu.pdf>
 File: ./Screenshots/AmplifierSettings.pdf Graphic file (type pdf)
  <./Screenshots/AmplifierSettings.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 343--357
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 375--389
 []$[]$ $[]$ 
  []
 
@@ -408,7 +408,7 @@ File: ./Graphs/beforeAmpGraph.pdf Graphic file (type pdf)
 <./Graphs/beforeAmpGraph.pdf>
 File: ./Graphs/afterAmpGraph.pdf Graphic file (type pdf)
  <./Graphs/afterAmpGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 363--377
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 395--409
 []$[]$ $[]$ 
  []
 
@@ -418,7 +418,7 @@ File: ./Graphs/beforeLowpassGraph.pdf Graphic file (type pdf)
 File: ./Graphs/afterLowpassGraph.pdf Graphic file (type pdf)
 
 <./Graphs/afterLowpassGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 394--408
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 429--443
 []$[]$ $[]$ 
  []
 
@@ -427,68 +427,68 @@ File: ./Graphs/beforeDeviationGraph.pdf Graphic file (type pdf)
  <./Graphs/beforeDeviationGraph.pdf>
 File: ./Graphs/afterDeviationGraph.pdf Graphic file (type pdf)
  <./Graphs/afterDeviationGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 423--437
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 461--475
 []$[]$ $[]$ 
  []
 
 [22]
 第 4 章
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 451.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 499.
 [23
 
-] [24]
+] [24] [25]
 第 5 章
-[25
-
-] [26
+[26
 
 ] [27
 
+] [28
+
 ]
 付 録 A  
-[28
+[29
 
-] [29] [30]
-Overfull \hbox (147.99979pt too wide) in paragraph at lines 544--544
+] [30] [31]
+Overfull \hbox (147.99979pt too wide) in paragraph at lines 645--645
 [][][][] 
  []
 
-[31] [32]
+[32] [33]
 付 録 B  
-[33
+[34
 
-] [34]
+] [35] [36]
 付 録 C  
 LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 610.
-[35
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 754.
+[37
 
-] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
-[50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
-[65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79]
-[80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94]
-[95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107]
-[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
-[120] [121] [122] [123] [124]
+] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
+[52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
+[67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
+[82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96]
+[97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109]
+[110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121]
+[122] [123] [124] [125] [126]
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 659.
- [125] [126] [127] [128] [129] [130] [131]
-[132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143]
-[144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155]
-[156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 814.
+ [127] [128] [129] [130] [131] [132] [133]
+[134] [135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145]
+[146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156] [157]
+[158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169]
 (./document.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5034 strings out of 493800
- 67928 string characters out of 6156126
- 394116 words of memory out of 5000000
- 8374 multiletter control sequences out of 15000+600000
+ 5038 strings out of 493800
+ 67972 string characters out of 6156126
+ 394155 words of memory out of 5000000
+ 8378 multiletter control sequences out of 15000+600000
  19298 words of font info for 83 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,8n,59p,370b,1691s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.dvi (168 pages, 1700980 bytes).
+Output written on document.dvi (170 pages, 1710336 bytes).

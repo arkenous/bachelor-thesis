@@ -81,6 +81,11 @@ showstringspaces=false,
 そこで，本研究ではパスコード認証が抱える認証の煩雑さを解消し，かつ自由度が高くより直感的に個人認証を行えるアプリケーションを開発する．
 このアプリケーションには，一般的なスマートフォンに搭載されている加速度センサとジャイロセンサを用いる．
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%               使用するセンサについて
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{使用するセンサについて}
 本アプリケーションには2種類のモーションセンサを利用する．
 
@@ -101,6 +106,11 @@ showstringspaces=false,
       \end{center}
     \end{figure}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       先行研究
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{先行研究}
     \section{坂本の研究}
     坂本の研究\cite{sakamoto}では，ユーザが入力したモーションの数値化に加速度センサを用い，あらかじめ保存しておいた複数のジェスチャパターンのデータと認証時に入力したデータをパターンマッチング方式のアルゴリズムを用いて比較することで個人認証を行った．
@@ -113,6 +123,11 @@ showstringspaces=false,
 
     しかし，全体的な認証成功率が低く，特に手首のスナップを用いるような動きの小さいモーションに対して認証率が特に低く出るなど，対応できるモーションに限りがあるという問題点が指摘されていた．
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                    本研究のシステム
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{本研究のシステム}
     \section{本研究の概要}
     本研究では兎澤の研究で挙げられていた，全体的な認証成功率の低さや対応できるモーションに限りがあるという点を改善することを目標とする．
@@ -162,6 +177,9 @@ showstringspaces=false,
     \end{figure}
 
         % 各モードに対して，説明をもっと掘り下げる
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                    新規登録モード
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \newpage
         \subsection{新規登録モード}
         新規登録モードでは，まず図\ref{nameInput}の画面において登録したいユーザの名前を入力する．
@@ -238,6 +256,9 @@ showstringspaces=false,
             \end{minipage}
         \end{figure}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                    認証試験モード
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         \subsection{認証試験モード}
         認証試験モードでは，まず図\ref{authNameInput}の画面において新規登録モードであらかじめ登録されたユーザ名を入力する．
         指定されたユーザ名で既にモーションの登録がなされていることが確認できた場合にのみ，図\ref{auth}の画面で個人認証を行う．
@@ -297,6 +318,9 @@ showstringspaces=false,
             \end{minipage}
         \end{figure}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                    データ閲覧モード
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         \subsection{データ閲覧モード}
         % 表現を改良する必要があるかもしれない
         データ閲覧モードでは，新規登録モードにおいて登録されたユーザ名とそれぞれのユーザが登録したモーションデータを閲覧することが出来る．
@@ -320,9 +344,17 @@ showstringspaces=false,
             \end{minipage}
         \end{figure}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                    先行研究からの改善点
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{先行研究からの改善点}
     先行研究において指摘されていた，手首のスナップを用いるような比較的動きの小さなモーションにおいて，認証率が低く出てしまうという課題を解決するために導入した機能をここに挙げる．
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                モーションデータの増幅機能
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         \subsection{モーションデータの増幅機能}
         手首を中心とするような動きの小さいモーションにおける個人認証成功率を向上させるために，モーションデータの増幅機能を実装した．
         これにより，比較的動きの小さなモーションであってもデータを増幅して用いることができ，比較的動きの大きなモーションと比べて遜色なく用いることが出来るようになった．
@@ -376,6 +408,9 @@ showstringspaces=false,
             \end{minipage}
         \end{figure}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%           フーリエ変換を用いたローパスフィルタ
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         \subsection{フーリエ変換を用いたローパスフィルタ}
         モーションデータを取得している際の細かな手の震えなどによるデータに対する影響を取り除き，モーションデータとしての純度を高めるために，フーリエ変換を用いたローパスフィルタ処理を行っている．
 
@@ -407,6 +442,9 @@ showstringspaces=false,
             \end{minipage}
         \end{figure}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%          モーション取得時のズレを修正する機能
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         \subsection{モーション取得時のズレを修正する機能}
         新規登録モードにおいてモーションを登録する際には3回分のモーションデータの入力が必要になるが，この回数ごとにモーションの時間的なズレが生じた場合はデータ登録や認証時に影響を与えてしまう可能性があるため，このズレを修正する処理を3回分のデータ取得後に行うようにしている．
 
@@ -440,8 +478,18 @@ showstringspaces=false,
         新規登録モード及び認証試験モードにおいてモーション取得時の時間経過が把握しやすいように，1秒毎に端末をヴァイブレーションさせる機能を実装した．
         また，データ取得前のインターバルからデータ取得に移る際には通常より長めのヴァイブレーションにすることで，データ取得開始のタイミングを明確に意識できるようにした．
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                      実験と考察
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{実験と考察}
-    \section{実験方法}
+    %\section{実験方法}
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%            新規登録及び個人認証の精度確認実験
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    \section{新規登録及び個人認証の精度確認実験}
+    \label{previousExp}
     手首のスナップを用いるような比較的小さなモーションにおける本システムの動作精度を確かめるために，新規登録および個人認証の成功率と成功時の平均試行回数を求める実験を行った．
     実験を行う前に任意のモーションで新規登録と個人認証を行い，個人認証に成功できた10名を被験者とした．
     実験対象のモーションは以下に挙げる5種類とし，手首から先のみを動かすようにしてモーションを入力した．
@@ -455,7 +503,7 @@ showstringspaces=false,
         \item 四角形を描く
     \end{itemize}
 
-    \section{実験結果}
+    \subsection{実験結果}
     新規登録の成功率と成功時の平均試行回数をまとめたものを表\ref{regResult}に示す．
 
     \begin{table}[htb]
@@ -498,7 +546,7 @@ showstringspaces=false,
 
     また，実験に関する詳細なデータは付録\ref{detail}に載せている．
 
-    \section{考察} % 被験者別に見るものと，モーション別に見るもの，2つの視点で書く．文章を練り直す
+    \subsection{考察} % 被験者別に見るものと，モーション別に見るもの，2つの視点で書く．文章を練り直す
     実験の結果から，手首から先のみを動かすようなモーションにおいて新規登録に関して失敗するということは無くなったが，個人認証に関してはモーションによって成功率が低く出てしまうものもあるという結果となった．
     被験者別に実験データを見てみると，認証に成功しやすい人と成功しにくい人に二分化する傾向が見られた．
     これについて，新規登録時と個人認証時にスマートフォンを同じように動かすという行為に馴染めたかどうかが原因の一つとして考えられる．
@@ -508,17 +556,61 @@ showstringspaces=false,
     これらモーションは，他のモーションに比べてモーションの馴染みが薄く，再現が難しかったのではないかと考えている．
     また，四拍子を振るものや四角形を描くものに関しては，モーション入力時間が3秒間である中でこれらモーションを入力しなければならず，入力がしづらかったのではないかと考えている．
 
-    \section{課題} % 文章を練り直す
-    現状ではモーションの入力時間が3秒間と限定されてしまい，自由度が高いとはいえないため，任意の入力時間で登録や認証を行えるようにする必要がある．
-    また，なりすましによる認証が行われた場合にどの程度耐性を有するのかの確認と，新規登録時からある程度期間を置いて個人認証を行う場合にどの程度認証に成功するのかの確認を行う必要がある．
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                覗き見耐性を有するかの実験
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    \section{覗き見耐性を有するかの実験}
+    \ref{previousExp}にて述べた実験を行う際に，5人の被験者については登録および認証を行う様子を正面から一般的なビデオカメラを用いて撮影していた．
+    この映像を用いて被験者になりすまして認証を行うことで，本システムが覗き見によるなりすまし認証にどの程度の耐性を有するのかを検証した．
 
-\chapter{おわりに} % 文章を練り直す
-%本研究では，新規登録や個人認証の精度を高めるためにモーションの振れ幅を増幅する機能やフーリエ変換を用いたローパスフィルタ，モーション取得時のズレを行う機能を実装することにより，新規登録や個人認証時の精度を向上することができた．
+    \ref{previousExp}の実験において被験者が登録したそれぞれのモーションに対して，映像を参考にして6回ずつなりすまし認証を試行した．
+    6回以内に認証できた場合はなりすまし認証に成功したとし，そうでない場合は失敗とみなした．
+
+    \subsection{実験結果}
+    モーションごとのなりすまし成功率をまとめたものを表\ref{spoofing}に示す．
+
+    \begin{table}[htb]
+        \begin{center}
+            \caption{実験結果}
+            \label{spoofing}
+            \begin{tabular}{|c|r|} \hline
+                モーション & なりすまし成功率 \\ \hline \hline
+                円を描く & 40\% \\ \hline
+                三拍子を振る & 0\% \\ \hline
+                四拍子を振る & 0\% \\ \hline
+                無限大記号を描く & 20\% \\ \hline
+                四角形を描く & 0\% \\ \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    また，実験に関する詳細なデータは付録\ref{spoofingDetail}に載せている．
+
+    \subsection{考察}
+    実験の結果から，\ref{previousExp}において登録や認証の成功率が高かったモーションについては，なりすまし認証に成功してしまう可能性があることがわかった．
+    なりすまし認証に成功してしまったこれらのモーションについては，端末の動かし方が単純であり，再現が容易であったためにこのような結果になったと考えている．
+
+    \section{課題} % なりすまし認証の実験を踏まえ，全体を書き直す
+    現状ではモーションの入力時間が3秒間と限定されてしまい，自由度が高いとはいえないため，任意の入力時間で登録や認証を行えるようにする必要がある．
+    また，ユーザが比較的シンプルなモーションを登録した場合には第三者が認証を突破してしまう恐れがあるため，モーション以外に何か別の要素を加えて個人識別を行うことでこの問題を解消する必要がある．
+    さらに，新規登録時からある程度期間を置いて個人認証を行う場合にどの程度認証に成功するのかの確認を行う必要がある．
+
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                      おわりに
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+\chapter{おわりに} % なりすまし認証の実験を踏まえ，書き直す
 本研究では，モーションの振れ幅を増幅する機能やフーリエ変換を用いたローパスフィルタ，モーション取得時のズレを修正する機能を実装し，新規登録や個人認証における精度を向上することができた．
-しかし，モーションの入力時間が3秒間と制限されていることから，モーションの種類によっては入力がしづらいという問題がある．
-また，なりすましによる認証に対してどの程度の耐性を有するのかという点や，新規登録時からある程度期間を置いて個人認証を行うような場合にどの程度の割合で成功するのかといった点を検証する必要がある．
+しかし，モーションの入力時間が3秒間と制限されていることからモーションの種類によっては入力がしづらいという点や，ユーザが単純なモーションを登録した場合において第三者が認証を突破してしまう場合があるという点についての対策を行わなければならない．
+また，新規登録時からある程度期間を置いて個人認証を行うような場合にどの程度の割合で成功するのかといった点を検証する必要がある．
 さらに，モーションを入力する人によって個人認証時に成功しやすい人と成功しにくい人に二分化する傾向が見られたため，成功しにくい人のデータを精査し，どのようにカバーしていくのかを検討する必要がある．
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                         謝辞
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter*{謝辞}
 本研究のプログラム開発や実験，本論文の執筆にあたり，手厚い指導と様々な助言をしていただいた，関西大学総合情報学部セキュア情報システム研究室の小林孝史准教授に深く感謝いたします．
 また，研究テーマの選定をはじめ，日頃から有益なアドバイスを頂いた同研究室の皆様に感謝いたします．
@@ -532,8 +624,17 @@ showstringspaces=false,
     \bibitem{jtransforms}{JTransforms，https:\slash \slash sites.google.com\slash site\slash piotrwendykier\slash software\slash jtransforms，2014年12月27日確認．}
 \end{thebibliography}
 
+
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                         付録
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \appendix
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%               プログラムより抜粋したもの
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{プログラムより抜粋したもの}
     \section{ズレ修正の判断部分}
     \lstinputlisting[label=checkDeviationSource, style=MyJava]
@@ -543,12 +644,16 @@ showstringspaces=false,
     \lstinputlisting[label=correctDeviationSource, style=MyJava]
     {Code\slash correctDeviation}
 
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       実験結果詳細
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{実験結果詳細}
+\section{新規登録及び個人認証の精度確認実験}
 \label{detail}
         \begin{center}
             \begin{longtable}{|c|c|r|r|}
-            %\caption{実験データ}
-            %\label{detail} \\ \hline
             \hline
                 被験者 & モーション & 試行回数-新規登録 & 試行回数-個人認証 \\ \hline \hline \endhead
                   & 円を描く & 1回目で成功 & 7回目まで失敗 \\ \cline{2-4} % Begin A
@@ -605,24 +710,70 @@ showstringspaces=false,
             \end{longtable}
         \end{center}
 
+\section{覗き見耐性を有するかの実験}
+\label{spoofingDetail}
+        \begin{center}
+            \begin{longtable}{|c|c|r|}
+            \hline
+                被験者 & モーション & 試行回数 \\ \hline \hline \endhead
+                  & 円を描く & 6回目で成功 \\ \cline{2-3} % Begin C
+                  & 三拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                C & 四拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 無限大記号を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 四角形を描く & 6回目まで失敗 \\ \hline % End C
+                  & 円を描く & 1回目で成功 \\ \cline{2-3} % Begin G
+                  & 三拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                G & 四拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 無限大記号を描く & 3回目で成功 \\ \cline{2-3}
+                  & 四角形を描く & 6回目まで失敗 \\ \hline % End G
+                  & 円を描く & 6回目まで失敗 \\ \cline{2-3} % Begin H
+                  & 三拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                H & 四拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 無限大記号を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 四角形を描く & 6回目まで失敗 \\ \hline % End H
+                  & 円を描く & 6回目まで失敗 \\ \cline{2-3} % Begin J
+                  & 三拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                J & 四拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 無限大記号を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 四角形を描く & 6回目まで失敗 \\ \hline % End J
+                  & 円を描く & 6回目まで失敗 \\ \cline{2-3} % Begin K
+                  & 三拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                K & 四拍子を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 無限大記号を描く & 6回目まで失敗 \\ \cline{2-3}
+                  & 四角形を描く & 6回目まで失敗 \\ \hline % End K
+            \end{longtable}
+        \end{center}
+
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                      プログラム本体 
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{プログラム本体}
     \section{src\slash com\slash example\slash motionauth\slash Start.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Start.java}
-% Registration
+
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       Registration
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{src\slash com\slash example\slash motionauth\slash Registration\slash RegistNameInput.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Registration\slash RegistNameInput.java}
 
     \section{src\slash com\slash example\slash motionauth\slash Registration\slash RegistMotion.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Registration\slash RegistMotion.java}
 
-% Authentication
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       Authentication
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{src\slash com\slash example\slash motionauth\slash Authentication\slash AuthNameInput.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Authentication\slash AuthNameInput.java}
 
     \section{src\slash com\slash example\slash motionauth\slash Authentication\slash AuthMotion.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Authentication\slash AuthMotion.java}
 
-% ViewDataList
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       ViewDataList
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{src\slash com\slash example\slash motionauth\slash ViewDataList\slash RegistrantList.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash ViewDataList\slash RegistrantList.java}
 
@@ -635,7 +786,9 @@ showstringspaces=false,
     \section{src\slash com\slash example\slash motionauth\slash ViewDataList\slash ViewAuthRData.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash ViewDataList\slash ViewAuthRData.java}
 
-% Processing
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       Processing
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{src\slash com\slash example\slash motionauth\slash Processing\slash Formatter.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Processing\slash Formatter.java}
 
@@ -654,11 +807,15 @@ showstringspaces=false,
     \section{src\slash com\slash example\slash motionauth\slash Processing\slash CipherCrypt.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Processing\slash CipherCrypt.java}
 
-% Lowpass
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       Lowpass
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{src\slash com\slash example\slash motionauth\slash Lowpass\slash Fourier.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Lowpass\slash Fourier.java}
 
-% Utility
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       Utility
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{src\slash com\slash example\slash motionauth\slash Utility\slash ConvertArrayAndString.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Utility\slash ConvertArrayAndString.java}
 
@@ -670,8 +827,10 @@ showstringspaces=false,
 
     \section{src\slash com\slash example\slash motionauth\slash Utility\slash ManageData.java}
     \lstinputlisting[style=MyJava]{MotionAuth\slash src\slash com\slash example\slash motionauth\slash Utility\slash ManageData.java}
-    
-%%%%% res/layout %%%%%
+
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       res/layout
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{res\slash layout\slash activity\_start.xml}
     \lstinputlisting[style=MyXML]{MotionAuth\slash res\slash layout\slash activity_start.xml}
 
@@ -702,11 +861,15 @@ showstringspaces=false,
     \section{res\slash layout\slash seekdialog.xml}
     \lstinputlisting[style=MyXML]{MotionAuth\slash res\slash layout\slash seekdialog.xml}
 
-%%%%% res/menu
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       res/menu
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{res\slash menu\slash regist\_motion.xml}
     \lstinputlisting[style=MyXML]{MotionAuth\slash res\slash menu\slash regist_motion.xml}
 
-%%%%% res/values
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                       res/values
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{res\slash values\slash configs.xml}
     \lstinputlisting[style=MyXML]{MotionAuth\slash res\slash values\slash configs.xml}
 
@@ -716,7 +879,9 @@ showstringspaces=false,
     \section{res\slash values\slash styles.xml}
     \lstinputlisting[style=MyXML]{MotionAuth\slash res\slash values\slash styles.xml}
 
-%%%%% AndroidManifest.xml
+% ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+%                  AndroidManifest.xml
+% vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     \section{AndroidManifest.xml}
     \lstinputlisting[style=MyXML]{MotionAuth\slash AndroidManifest.xml}
 
