@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  31 JAN 2015 18:09
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2014.12.2)  3 FEB 2015 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,8 +9,8 @@ Babel <3.9k> and hyphenation patterns for 79 languages loaded.
 (/usr/share/texmf-dist/tex/platex/base/jreport.cls
 Document Class: jreport 2006/06/27 v1.6 Standard pLaTeX class
 \c@@paper=\count81
-(/usr/share/texmf-dist/tex/platex/base/jsize11.clo
-File: jsize11.clo 2006/06/27 v1.6 Standard pLaTeX file (size option)
+(/usr/share/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2006/06/27 v1.6 Standard pLaTeX file (size option)
 )
 \c@part=\count82
 \c@chapter=\count83
@@ -177,9 +177,9 @@ LaTeX Font Info:    ... okay on input line 70.
  (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 70.
+(Font)              scaled to size 11.54663pt on input line 70.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 70.
+(Font)              scaled to size 11.54663pt on input line 70.
 LaTeX Font Info:    Try loading font information for OT1+pnc on input line 70.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pnc.fd
@@ -187,69 +187,65 @@ File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
 \c@lstlisting=\count112
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 71.
+(Font)              scaled to size 19.95642pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 71.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <17.28> not available
+(Font)              scaled to size 19.95642pt on input line 71.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <20.74> not available
 (Font)              Font shape `JT1/hgt/m/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 71.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <17.28> not available
+(Font)              scaled to size 19.95642pt on input line 71.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <20.74> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 71.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <17.28> not available
+(Font)              scaled to size 19.95642pt on input line 71.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 16.62714pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 16.62714pt on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 71.
+(Font)              <17.28> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 71.
+(Font)              <12> on input line 71.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 71.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 71.
 LaTeX Font Info:    Font shape `JT1/utfj/m/9' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 16.62714pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/utfj/m/9' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 16.62714pt on input line 71.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 71.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 71.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 73.
+(Font)              scaled to size 23.94002pt on input line 73.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 73.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <20.74> not available
+(Font)              scaled to size 23.94002pt on input line 73.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/hgt/m/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 73.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <20.74> not available
+(Font)              scaled to size 23.94002pt on input line 73.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 73.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <20.74> not available
+(Font)              scaled to size 23.94002pt on input line 73.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 73.
  (./document.toc
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/hgt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 1.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10.95> not available
+(Font)              scaled to size 11.54663pt on input line 1.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 1.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
+(Font)              scaled to size 11.54663pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -265,13 +261,13 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 \tf@toc=\write3
 \openout3 = `document.toc'.
 
- [3] (./document.lof)
+ [3] (./document.lof [4
+
+])
 \tf@lof=\write4
 \openout4 = `document.lof'.
 
- [4
-
-] [5] [6
+ [5] [6
 
 ]
 第 1 章
@@ -290,7 +286,7 @@ File: ./Screenshots/Start.pdf Graphic file (type pdf)
  <./Screenshots/Start.pdf>
 File: ./Screenshots/ModeSelect.pdf Graphic file (type pdf)
  <./Screenshots/ModeSelect.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 163--177
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 163--177
 []$[]$ $[]$ 
  []
 
@@ -310,16 +306,18 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 216.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10> not available
+(Font)              scaled to size 10.53629pt on input line 216.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 216.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10.95> not available
 (Font)              Font shape `JT1/hgt/m/n' tried instead on input line 216.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 216.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10> not available
+(Font)              scaled to size 10.53629pt on input line 216.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10.95> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 216.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 216.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
+(Font)              scaled to size 10.53629pt on input line 216.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 216.
 LaTeX Font Info:    Try loading font information for OMS+pnc on input line 216.
 
@@ -327,7 +325,7 @@ LaTeX Font Info:    Try loading font information for OMS+pnc on input line 216.
 (/usr/share/texmf-dist/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
-LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10> not available
+LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
 
 
@@ -339,9 +337,9 @@ LaTeX Font Warning: Font shape `JY1/hmc/m/it' undefined
 (Font)              using `JY1/hmc/m/n' instead on input line 216.
 
 LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
-(Font)              scaled to size 9.6222pt on input line 216.
+(Font)              scaled to size 10.53629pt on input line 216.
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
-(Font)              scaled to size 9.6222pt on input line 216.
+(Font)              scaled to size 10.53629pt on input line 216.
 [11] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 216.
@@ -370,37 +368,37 @@ File: ./Screenshots/AuthSuccess.pdf Graphic file (type pdf)
 <./Screenshots/AuthSuccess.pdf>
 File: ./Screenshots/AuthFail.pdf Graphic file (type pdf)
  <./Screenshots/AuthFail.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 305--319
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 304--318
 []$[]$ $[]$ 
  []
 
+[15]
 File: ./Screenshots/UserList.pdf Graphic file (type pdf)
-<./Screenshots/UserList.pdf>
+ <./Screenshots/UserList.pdf>
 File: ./Screenshots/DataList.pdf Graphic file (type pdf)
  <./Screenshots/DataList.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 331--345
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 330--344
 []$[]$ $[]$ 
  []
 
-[15] [16]
-LaTeX Font Info:    Try loading font information for OML+pnc on input line 364.
+[16]
+LaTeX Font Info:    Try loading font information for OML+pnc on input line 363.
 
  (/usr/share/texmf-dist/tex/latex/psnfss/omlpnc.fd
 File: omlpnc.fd 
 )
-LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 364.
+LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 363.
  [17]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 370.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 370.
+(Font)              <10.95> on input line 369.
+ [18]
 File: ./Screenshots/RegMenu.pdf Graphic file (type pdf)
 
 <./Screenshots/RegMenu.pdf>
 File: ./Screenshots/AmplifierSettings.pdf Graphic file (type pdf)
  <./Screenshots/AmplifierSettings.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 375--389
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 374--388
 []$[]$ $[]$ 
  []
 
@@ -408,17 +406,16 @@ File: ./Graphs/beforeAmpGraph.pdf Graphic file (type pdf)
 <./Graphs/beforeAmpGraph.pdf>
 File: ./Graphs/afterAmpGraph.pdf Graphic file (type pdf)
  <./Graphs/afterAmpGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 395--409
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 394--408
 []$[]$ $[]$ 
  []
 
-[18] [19] [20]
+[19] [20]
 File: ./Graphs/beforeLowpassGraph.pdf Graphic file (type pdf)
  <./Graphs/beforeLowpassGraph.pdf>
 File: ./Graphs/afterLowpassGraph.pdf Graphic file (type pdf)
-
-<./Graphs/afterLowpassGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 429--443
+ <./Graphs/afterLowpassGraph.pdf>
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 428--442
 []$[]$ $[]$ 
  []
 
@@ -427,68 +424,90 @@ File: ./Graphs/beforeDeviationGraph.pdf Graphic file (type pdf)
  <./Graphs/beforeDeviationGraph.pdf>
 File: ./Graphs/afterDeviationGraph.pdf Graphic file (type pdf)
  <./Graphs/afterDeviationGraph.pdf>
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 461--475
+Overfull \hbox (2.54399pt too wide) in paragraph at lines 460--474
 []$[]$ $[]$ 
  []
 
-[22]
+[22] [23]
 第 4 章
-LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 499.
-[23
+LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 498.
+[24
 
-] [24] [25]
+] [25] [26]
 第 5 章
-[26
-
-] [27
+[27
 
 ] [28
 
 ]
-付 録 A  
+Underfull \hbox (badness 10000) in paragraph at lines 622--623
+[]\OT1/pnc/m/n/12 Parallel Colt\JY1/hmc/m/n/12 ， \OT1/pnc/m/n/12 https://sites
+.google.com/site/piotrwendykier/software/parallelcolt\JY1/hmc/m/n/12 ，
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--624
+[]\OT1/pnc/m/n/12 JTransforms\JY1/hmc/m/n/12 ， \OT1/pnc/m/n/12 https://sites.g
+oogle.com/site/piotrwendykier/software/jtransforms\JY1/hmc/m/n/12 ，
+ []
+
 [29
 
-] [30] [31]
-Overfull \hbox (147.99979pt too wide) in paragraph at lines 645--645
+]
+付 録 A  
+[30
+
+] [31] [32]
+Overfull \hbox (205.56898pt too wide) in paragraph at lines 644--644
 [][][][] 
  []
 
-[32] [33]
+[33] [34] [35]
 付 録 B  
-[34
+[36
 
-] [35] [36]
+] [37] [38] [39]
 付 録 C  
-LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 754.
-[37
+LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 753.
+[40
 
-] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
-[52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
-[67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
-[82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96]
-[97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109]
-[110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121]
-[122] [123] [124] [125] [126]
-LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 814.
- [127] [128] [129] [130] [131] [132] [133]
-[134] [135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145]
-[146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156] [157]
-[158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169]
-(./document.aux)
+] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]
+[55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69]
+[70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84]
+[85] [86] [87] [88] [89] [90] [91] [92] [93] [94]
+Overfull \hbox (8.46739pt too wide) in paragraph at lines 780--780
+[][][][] 
+ []
+
+[95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107]
+[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
+[120] [121] [122] [123] [124] [125] [126] [127] [128] [129] [130] [131]
+[132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143]
+LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 813.
+
+[144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155]
+[156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167]
+[168] [169] [170] [171] [172]
+Overfull \hbox (1.89734pt too wide) in paragraph at lines 828--828
+[][][][] 
+ []
+
+[173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184]
+[185] [186] [187] [188] [189] [190] [191] [192] [193] [194] (./document.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
  5038 strings out of 493800
- 67972 string characters out of 6156126
- 394155 words of memory out of 5000000
- 8378 multiletter control sequences out of 15000+600000
- 19298 words of font info for 83 fonts, out of 8000000 for 9000
+ 68000 string characters out of 6156126
+ 312952 words of memory out of 5000000
+ 8377 multiletter control sequences out of 15000+600000
+ 19647 words of font info for 83 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 32i,8n,59p,370b,1691s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,8n,59p,370b,1692s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.dvi (170 pages, 1710336 bytes).
+Output written on document.dvi (195 pages, 1728276 bytes).

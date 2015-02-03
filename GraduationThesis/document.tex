@@ -3,7 +3,7 @@
 %
 % Mar 21, 2001:  Revision Control Started!!
 %
-\documentclass[11pt]{jreport}
+\documentclass[12pt]{jreport}
 \usepackage{newcent}             % PDFへの変換後の品質を高める
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{color}
@@ -87,7 +87,7 @@ showstringspaces=false,
 % vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 % vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 \chapter{使用するセンサについて}
-本アプリケーションには2種類のモーションセンサを利用する．
+%本アプリケーションには2種類のモーションセンサを利用する．
 
     \section{加速度センサ}
     加速度センサとは，X軸，Y軸，Z軸の基準軸に対して直線運動の加速度をそれぞれ検出し，値として取り出すことのできるセンサである．
@@ -203,11 +203,11 @@ showstringspaces=false,
                 \caption{エラー通知}
                 \label{nameInputError}
             \end{minipage}
-            \begin{minipage}{0.33\hsize}
+            \begin{minipage}{0.32\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{Reg.pdf}
                 \end{center}
-                \caption{モーション登録画面}
+                \caption{新規登録画面}
                 \label{reg}
             \end{minipage}
         \end{figure}
@@ -247,7 +247,7 @@ showstringspaces=false,
                 \caption{登録完了ダイアログ}
                 \label{regSuccess}
             \end{minipage}
-            \begin{minipage}{0.33\hsize}
+            \begin{minipage}{0.32\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{RegFail.pdf}
                 \end{center}
@@ -280,7 +280,7 @@ showstringspaces=false,
                 \caption{認証試験画面}
                 \label{auth}
             \end{minipage}
-            \begin{minipage}{0.33\hsize}
+            \begin{minipage}{0.32\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{AuthNameInputError.pdf}
                 \end{center}
@@ -289,7 +289,6 @@ showstringspaces=false,
             \end{minipage}
         \end{figure}
 
-        \newpage
         \lstinputlisting[caption=ユーザ確認, label=authCheckInputNameSource, style=MyJava]
         {Code\slash authCheckInputName}
 
@@ -301,7 +300,7 @@ showstringspaces=false,
         個人認証に失敗すれば，図\ref{authFail}のような認証失敗ダイアログを表示する．
         このダイアログのOKボタンを押すことでプログラム内部のモーションデータ取得カウンタが初期化され，再度個人認証を行えるようにする．
 
-        \begin{figure}[tbp]
+        \begin{figure}[hbtp]
             \begin{minipage}{0.5\hsize}
                 \begin{center}
                     \includegraphics[width=5cm, bb=0 0 540 960]{AuthSuccess.pdf}
@@ -457,7 +456,7 @@ showstringspaces=false,
         ズレ修正を行う前のデータをグラフ化したものを図\ref{beforeDeviationDataGraph}に，修正を行った後のデータをグラフ化したものを図\ref{afterDeviationDataGraph}に示す．
 
         % 修正前と修正後の比較グラフ
-        \begin{figure}[btp]
+        \begin{figure}[hbpt]
             \begin{minipage}{0.5\hsize}
                 \begin{center}
                     \includegraphics[width=8cm, bb=0 0 360 216]{beforeDeviationGraph.pdf}
